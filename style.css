@@ -255,13 +255,15 @@ body {
     .container .bottom-container {
         width: 100%;
     }
+    
     .container .bottom-container .left-box {
         padding: 20px;
     }
+
     .container .bottom-container .left-box p:first-of-type {
         justify-content: flex-start;
     }
-    
+
     .container .bottom-container .left-box button {
         width: 100%;
     }
