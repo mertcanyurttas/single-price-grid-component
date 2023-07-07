@@ -18,6 +18,8 @@
     list-style-type: none;
 }
 
+/* Tablets and Desktops Start */
+
 body {
     display: flex;
     justify-content: center;
@@ -171,20 +173,13 @@ body {
     color: #fff;
 }
 
+/* Tablets and Desktops End */
 
-
-
-
-
-
-
-
+/* Mobile Responsive Start */
 
 @media screen and (max-width: 700px) {
     body {
-        width: auto;
         height: auto;
-        
     }
 
     .container {
@@ -200,155 +195,54 @@ body {
     }
 
     .container .top-container h1 {
-        display: flex;
-        width: 263px;
-        flex-direction: column;
-        flex-shrink: 0;
-        color: #2ab3b1;
         font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
         letter-spacing: -0.25px;
     }
 
     .container .top-container article h3 {
-        display: flex;
-        width: 263px;
-        flex-direction: column;
-        flex-shrink: 0;
-        color: #c0df33;
         font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
         line-height: 20px;
         letter-spacing: -0.187px;
     }
 
     .container .top-container article div {
-        display: flex;
-        width: 263px;
-        flex-direction: column;
-        flex-shrink: 0;
-        color: #9aa7be;
         font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
         letter-spacing: -0.175px;
     }
 
     .container .bottom-container {
         flex-direction: column;
+        -ms-flex-direction: column;
         width: 311px;
-        height: 455px;
-        flex-shrink: 0;
     }
 
     .container .bottom-container .left-box {
         padding: 24px;
     }
 
-    .container .bottom-container .left-box h2 {
-        color: #fff;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -0.225px;
-    }
-
     .container .bottom-container .left-box p:first-of-type {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        gap: 11px;
-        color: #fff;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -0.4px;
-    }
-
-    .container .bottom-container .left-box p:first-of-type span {
-        color: #fff;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-        letter-spacing: -0.2px;
-        opacity: 0.5;
-    }
-
-    .container .bottom-container .left-box p:last-of-type {
-        display: flex;
-        width: 238px;
-        flex-direction: column;
-        flex-shrink: 0;
-        color: #fff;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px;
-        letter-spacing: -0.2px;
     }
 
     .container .bottom-container .left-box button {
         width: 263px;
-        height: 48px;
-        flex-shrink: 0;
-        border-radius: 5px;
-        background: #c0df33;
-        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
-        color: #fff;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -0.2px;
     }
 
     .container .bottom-container .right-box {
-        padding: 24px;
-        width: 311px;
         height: 227px;
-        flex-shrink: 0;
-    }
-
-    .container .bottom-container .right-box h2 {
-        color: #fff;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -0.225px;
-    }
-
-    .container .bottom-container .right-box ul {
-        display: flex;
-        width: 238px;
-        flex-direction: column;
-        flex-shrink: 0;
-        color: #fff;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: -0.175px;
-        opacity: 0.75;
+        padding: 24px;
     }
 }
 
-@media screen and (max-width: 340px) {
-    body {
-        width: auto;
-        height: auto;
-    }
+/* Mobile Responsive End */
 
+/* Small Mobile Devices Start */
+
+@media screen and (max-width: 340px) {
     .container {
         width: 92%;
-        height: auto;
         margin: 36px auto;
     }
 
@@ -358,60 +252,28 @@ body {
         padding: 20px;
     }
 
-    .container .top-container h1 {
-        width: 100%;
-    }
-
-    .container .top-container article {
-        width: 100%;
-    }
-
-    .container .top-container article h3 {
-        width: 100%;
-    }
-
-    .container .top-container article div {
-        width: 100%;
-    }
-
     .container .bottom-container {
         width: 100%;
     }
-
     .container .bottom-container .left-box {
-        width: auto;
-        height: auto;
         padding: 20px;
     }
-
-    .container .bottom-container .left-box h2 {
-        width: 100%;
-    }
-
     .container .bottom-container .left-box p:first-of-type {
-        width: 100%;
         justify-content: flex-start;
     }
-
-    .container .bottom-container .left-box p:last-of-type {
-        width: 100%;
-    }
-
+    
     .container .bottom-container .left-box button {
         width: 100%;
     }
 
     .container .bottom-container .right-box {
-        width: auto;
         height: auto;
         padding: 20px;
-    }
-
-    .container .bottom-container .right-box ul {
-        width: 100%;
     }
 
     .container .bottom-container .right-box ul li {
         line-height: 22px;
     }
 }
+
+/* Small Mobile Devices End */
